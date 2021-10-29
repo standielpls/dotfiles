@@ -1,86 +1,120 @@
 // Place your settings in this file to overwrite the default settings
 {
-    "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
-    "editor.detectIndentation": false,
-    "editor.fontLigatures": true,
-    "editor.fontSize": 15,
-    "editor.minimap.renderCharacters": false,
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "all",
-    "editor.renderControlCharacters": false,
-    "editor.rulers": [80],
+  "editor.fontFamily": "'Fira Code', Menlo, Monaco, 'Courier New', monospace",
+  "editor.detectIndentation": false,
+  "editor.fontLigatures": true,
+  "editor.minimap.renderCharacters": false,
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "all",
+  "editor.renderControlCharacters": false,
+  "editor.rulers": [80],
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": false,
+
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/*.coverprofile": true,
+    "**/*.out": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true,
+    "**/vendor/**": true
+  },
+
+  // Js setup.
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // Go setup.
+  "go.formatTool": "goimports",
+  // "go.lintTool":"golangci-lint",
+  "go.lintFlags": ["--fast"],
+  "go.testTimeout": "5s",
+  "go.useLanguageServer": true,
+  "[golang]": {
+    "editor.tabSize": 4
+  },
+
+  // Python setup.
+  "python.linting.enabled": true,
+  "python.pythonPath": "/usr/local/bin/python3",
+  "[python]": {
+    "editor.tabSize": 4
+  },
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/vendor": true
+  },
+
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#B6C454",
+    "statusBar.foreground": "#000000"
+  },
+  "workbench.editor.showTabs": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "[html]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[js, jsx]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ts, tsx]": {
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[go, golang]": {
     "editor.tabSize": 4,
-
-    "explorer.confirmDelete": false,
-    "extensions.ignoreRecommendations": false,
-    
-    "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/.DS_Store": true,
-        "**/node_modules": true,
-        "**/*.coverprofile": true,
-        "**/*.out": true
-    },
-    "files.watcherExclude": {
-        "**/.git/objects/**": true,
-        "**/node_modules/**": true,
-        "**/vendor/**": true
-    },
-
-    // Js setup.
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-
-    // Go setup.
-    "go.formatTool": "goimports",
-    // "go.lintTool":"golangci-lint",
-    "go.lintFlags": [
-        "--fast"
-    ],
-    "go.testTimeout": "5s",
-    "go.useLanguageServer": true,
-
-    // Python setup.
-    "python.linting.enabled": true,
-    "python.pythonPath": "/usr/local/bin/python3",
-    "[python]": {
-        "editor.tabSize": 4
-    },
-
-    "search.exclude": {
-        "**/node_modules": true,
-        "**/bower_components": true,
-        "**/vendor": true
-    },
-    
-    "workbench.colorCustomizations": {
-        "statusBar.background" : "#FFEFD5",
-        "statusBar.foreground": "#000000"
-    },
-    "workbench.editor.showTabs": true,
-
-    "window.zoomLevel": 0,
-    "[html]": {
-        "editor.tabSize": 2,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[css]": {
-        "editor.tabSize": 2,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[js]": {
-        "editor.tabSize": 2,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[yaml]": {
-        "editor.quickSuggestions": {
-            "other": true,
-            "comments": false,
-            "strings": true
-        },
-        "editor.tabSize": 2
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ts, js, jsx, tsx]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
     }
+  },
+  "[yaml]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.tabSize": 2,
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "terminal.integrated.scrollback": 5000,
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.ignoreTrimWhitespace": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorTheme": "Default Light+",
+  "editor.fontSize": 14
 }
